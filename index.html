@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Explore top countries and apply today.">
+    <title>Study MBBS Abroad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hover-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .focus-input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center p-10">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="mt-2">Explore top destinations for MBBS and start your journey today!</p>
+        <button class="mt-4 bg-yellow-400 px-6 py-2 text-black font-semibold rounded-lg" onclick="scrollToForm()">Apply Now</button>
+    </section>
+
+    <!-- Why Study MBBS Abroad -->
+    <section class="p-10 bg-white">
+        <h2 class="text-2xl font-semibold text-center">Why Study MBBS Abroad?</h2>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-4 bg-gray-200 rounded-lg hover-card">
+                <h3 class="text-xl font-bold">Affordable Fees</h3>
+                <p class="mt-2">Study at top universities around the world without breaking the bank.</p>
+            </div>
+            <div class="p-4 bg-gray-200 rounded-lg hover-card">
+                <h3 class="text-xl font-bold">World-Class Universities</h3>
+                <p class="mt-2">Get access to the best medical education from renowned institutions.</p>
+            </div>
+            <div class="p-4 bg-gray-200 rounded-lg hover-card">
+                <h3 class="text-xl font-bold">International Recognition</h3>
+                <p class="mt-2">Earn a degree that is recognized globally and opens doors to various opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Countries -->
+    <section class="p-10">
+        <h2 class="text-2xl font-semibold text-center">Top MBBS Destinations</h2>
+        <div class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
+            <div class="p-4 bg-white rounded-lg shadow bg-cover bg-center" style="background-image: url('assets/russia.jpg');">
+                <span class="bg-black bg-opacity-50 text-white p-2 rounded">Russia</span>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow bg-cover bg-center" style="background-image: url('assets/uzbekistan.jpeg');">
+                <span class="bg-black bg-opacity-50 text-white p-2 rounded">Uzbekistan</span>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow bg-cover bg-center" style="background-image: url('assets/Nursultan-Kazakhstan.webp');">
+                <span class="bg-black bg-opacity-50 text-white p-2 rounded">Kazakhstan</span>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow bg-cover bg-center" style="background-image: url('assets/philippines.webp');">
+                <span class="bg-black bg-opacity-50 text-white p-2 rounded">Philippines</span>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow bg-cover bg-center" style="background-image: url('assets/georgia.webp');">
+                <span class="bg-black bg-opacity-50 text-white p-2 rounded">Georgia</span>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow bg-cover bg-center" style="background-image: url('assets/kyrgyzstan.jpg');">
+                <span class="bg-black bg-opacity-50 text-white p-2 rounded">Kyrgyzstan</span>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow bg-cover bg-center" style="background-image: url('assets/egypt.webp');">
+                <span class="bg-black bg-opacity-50 text-white p-2 rounded">Egypt</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="p-10 bg-white">
+        <h2 class="text-2xl font-semibold text-center">Admission Process</h2>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-4 bg-gray-100 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-blue-600">Step 1</h3>
+                <p class="mt-2">Check eligibility criteria</p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-blue-600">Step 2</h3>
+                <p class="mt-2">Choose your preferred country</p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-blue-600">Step 3</h3>
+                <p class="mt-2">Submit required documents</p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-blue-600">Step 4</h3>
+                <p class="mt-2">Receive admission confirmation</p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-blue-600">Step 5</h3>
+                <p class="mt-2">Apply for a student visa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section id="application-form" class="p-10 bg-blue-100 fade-in">
+        <h2 class="text-2xl font-semibold text-center">Apply Now</h2>
+        <form id="leadForm" class="mt-4 max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+            <input type="text" id="name" placeholder="Full Name" class="w-full p-2 mb-3 border rounded focus-input">
+            <input type="email" id="email" placeholder="Email" class="w-full p-2 mb-3 border rounded focus-input">
+            <input type="tel" id="phone" placeholder="Phone" class="w-full p-2 mb-3 border rounded focus-input">
+            <select id="country" class="w-full p-2 mb-3 border rounded focus-input">
+                <option value="">Select Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+                <option>Egypt</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded">Submit</button>
+        </form>
+    </section>
+    
+    <script>
+        function scrollToForm() {
+            document.getElementById("application-form").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function revealElements() {
+            const elements = document.querySelectorAll('.fade-in');
+            const windowHeight = window.innerHeight;
+
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 50) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("leadForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                let name = document.getElementById("name").value.trim();
+                let email = document.getElementById("email").value.trim();
+                let phone = document.getElementById("phone").value.trim();
+                let country = document.getElementById("country").value;
+
+                if (name === "" || email === "" || phone === "" || country === "") {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    alert("Enter a valid email address.");
+                    return;
+                }
+
+                if (!/^\d{10}$/.test(phone)) {
+                    alert("Enter a valid 10-digit phone number.");
+                    return;
+                }
+
+                alert("Form submitted successfully!");
+                document.getElementById("leadForm").reset();
+            });
+
+            revealElements();
+            window.addEventListener('scroll', revealElements);
+        });
+    </script>
+</body>
+</html>
